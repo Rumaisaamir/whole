@@ -15,7 +15,6 @@
     <div id="app">
       <nav class="navbar">
         <div class="nav-content">
-          <!-- <span class="logo-img"><img src="http://localhost:3000/images/logo.png" alt="" /></span> -->
           <h1 class="site-name" v-text="sitename"></h1>
 
           <div class="search-bar">
@@ -45,10 +44,10 @@
       <div class="filter-section" v-if="!checkoutPage">
         <label for="sort-by">Sort By:</label>
         <select v-model="sortCategory">
+          <option value="name">Name</option>
           <option value="price">Price</option>
           <option value="location">Location</option>
           <option value="availability">Availability</option>
-          <option value="name">Name</option>
         </select>
         <select v-model="sortOrder">
           <option value="asc">Ascending</option>
@@ -196,7 +195,7 @@
       var AfterSchoolClub = new Vue({
         el: "#app",
         data: {
-          sitename: "After School Club",
+          sitename: "After School",
           searchQuery: "",
           sortCategory: "price",
           sortOrder: "asc",

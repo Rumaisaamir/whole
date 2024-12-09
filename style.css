@@ -28,6 +28,14 @@ span > img {
   text-align: center;
 }
 
+body{
+  font-family: '''Times New Roman', Times, serif;
+  background-color: lightslategrey;
+  background-image: url(images/bg.jpg);
+  color: #333;
+  padding: 20px;
+}
+
 .filter-section {
   text-align: center;
 }
@@ -42,8 +50,9 @@ span > img {
   justify-content: space-between;
   margin: 20px;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 10px solid darkgrey;
   border-radius: 5px;
+  background-color: darkgrey;
 }
 
 .input-fields,
@@ -53,7 +62,7 @@ span > img {
 }
 
 .order-summary {
-  border-left: 1px solid #ccc;
+  border-left: 7px solid #ccc;
   padding-left: 20px;
 }
 
@@ -89,7 +98,7 @@ span > img {
 .placeOrder {
   margin-left: auto;
   padding: 10px 20px;
-  background-color: #4756ff;
+  background-color: lightslategray;
   color: white;
   border: none;
   border-radius: 5px;
@@ -104,7 +113,7 @@ span > img {
 :disabled {
   margin-left: auto;
   padding: 10px 20px;
-  background-color: #b3b4bb;
+  background-color: #f6f6f6;
   color: white;
   border: none;
   border-radius: 5px;
@@ -132,7 +141,7 @@ span > img {
 }
 
 .product-item {
-  border: 1px solid #ccc;
+  border: 1px solid grey;
   padding: 15px;
   background-color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -149,9 +158,9 @@ span > img {
 .product-item {
   border: 1px solid #ccc;
   padding: 15px;
-  background-color: #fff;
+  background-color: lightgrey;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  border-radius: 8px;
+  border-radius: 30px;
 }
 
 /* Responsive image styling */
@@ -171,13 +180,14 @@ span > img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(255, 255, 255);
-  padding: 15px 0;
+ background-color: lightgrey;
+  padding: 20px 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
-  margin: 0;
+  border-radius: 200px;
+  margin: 10px;
 }
 
 /* Content inside the nav */
@@ -219,7 +229,7 @@ span > img {
 
 /* Search button */
 .search-bar button {
-  background-color: #ff7e5f;
+  background-color: lightslategray;
   border: none;
   color: white;
   padding: 8px 12px;
