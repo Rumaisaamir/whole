@@ -16,20 +16,28 @@ app.use((req, res, next) => {
   next();
 });
 
-//Function to log the current time
-function logCurrentTime() {
-  const time = new Date();
-  const options = {
-    day: "2-digit",
-    month: "2-digit",
-    year: "numeric",
-    hour: "2-digit",
-    minute: "2-digit",
-    second: "2-digit",
-  };
+// //Function to log the current time
+// function logCurrentTime() {
+//   const time = new Date();
+//   const options = {
+//     day: "2-digit",
+//     month: "2-digit",
+//     year: "numeric",
+//     hour: "2-digit",
+//     minute: "2-digit",
+//     second: "2-digit",
+//   };
 
-  return time.toLocaleDateString("en-US", options);
-}
+//   return time.toLocaleDateString("en-US", options);
+// }
+app.use(function (req, res, next) {
+  // logging middleware
+  console.log("Request IP: " + req.url);
+  console.log("Request Body: " + JSON.stringify(req.body));
+  console.log("Request Query Params: " + JSON.stringify(req.query));
+  console.log("Request date: " + new Date());
+  next();
+});
 
 let db;
 MongoClient.connect(
